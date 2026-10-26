@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="am" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ኣተበ ጠቅላላ የንግድ ስራዎች ኃ/የተ/የግ/ማ | Atebe General Trading PLC</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Noto Sans Ethiopic -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#0F172A',
+                            900: '#020617',
+                        },
+                        gold: {
+                            400: '#FACC15',
+                            500: '#EAB308',
+                            600: '#CA8A04',
+                        },
+                        emeraldCustom: '#059669',
+                    },
+                    fontFamily: {
+                        amharic: ['Noto Sans Ethiopic', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans Ethiopic', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- Top Info Bar -->
+    <div class="bg-navy-900 text-gray-300 text-sm py-2 px-4 border-b border-gray-800 hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-6 space-x-reverse">
+                <span><i class="fas fa-map-marker-alt text-gold-500 ml-2"></i> አዲስ አበባ፣ ኢትዮጵያ</span>
+                <a href="mailto:atebe134@gmail.com" class="hover:text-gold-400 transition"><i class="fas fa-envelope text-gold-500 ml-2"></i> atebe134@gmail.com</a>
+                <a href="tel:+251941508024" class="hover:text-gold-400 transition"><i class="fas fa-phone-alt text-gold-500 ml-2"></i> +251 941 508 024</a>
+            </div>
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <span class="text-xs text-gold-400 font-semibold">በታማኝነት እና በጥራት ማገልገል መሪያችን ነው!</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center space-x-3 space-x-reverse">
+                        <div class="w-12 h-12 bg-navy-800 rounded-xl flex items-center justify-center text-gold-400 font-bold text-2xl shadow-lg border-2 border-gold-500">
+                            ኣ
+                        </div>
+                        <div>
+                            <span class="text-xl md:text-2xl font-extrabold text-navy-800 block leading-tight">ኣተበ ጠቅላላ ንግድ</span>
+                            <span class="text-xs text-gold-600 font-semibold tracking-wider block">ኃላፊነቱ የተወሰነ የግል ማህበር</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 space-x-reverse font-medium">
+                    <a href="#home" class="text-navy-800 hover:text-gold-600 transition duration-150">መነሻ</a>
+                    <a href="#about" class="text-gray-600 hover:text-gold-600 transition duration-150">ስለ እኛ</a>
+                    <a href="#vision" class="text-gray-600 hover:text-gold-600 transition duration-150">ራዕይና ተልዕኮ</a>
+                    <a href="#services" class="text-gray-600 hover:text-gold-600 transition duration-150">የንግድ ዘርፎች</a>
+                    <a href="#contact" class="bg-navy-800 text-white px-5 py-2.5 rounded-lg hover:bg-gold-600 transition duration-300 shadow-md">ያግኙን</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-navy-800 hover:text-gold-600 focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+   
